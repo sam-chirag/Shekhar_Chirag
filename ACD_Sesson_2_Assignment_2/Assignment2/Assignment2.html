@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<hmtl>
+ 	<head>
+ 		<title> Design a HTML form </title>
+ 	</head>
+ 	<body>
+ 		<form action="http://starbuzzcoffee.com/processorder.php" method="post">
+  			<h1>Chirag Coffee Shop </h1>
+ 			<h2>Fill out the form below and "click order" now to order</h2>
+ 			<p>
+ 				<fieldset>
+					<legend>Choose Your Coffee beans:</legend>
+						<select name="beans">
+							<option value="House Blend">Assam Bean</option>
+							<option value="Bolivia">Bongagiaon Indian Bean</option>
+							<option value="Guatemala">Organic Guatemala</option>
+							<option value="Kenya">Kenya Bean</option>
+						</select>
+				</fieldset>
+ 			</p>
+ 			<p>Type:<br>
+ 				<input type="radio" name="beantype" value="whole" checked="true">Whole bean<br>
+ 				<input type="radio" name="beantype" value="ground">Ground
+ 			</p>
+
+ 			<p>
+				<fieldset>
+					<legend> Order Deatils </legend>
+						Number of bags:<input type="number" name="bags" min="1" max="10">
+ 			
+						Must arrive by Date: <input type="date" name="date">
+				</fieldset>
+ 			</p>
+ 				
+ 			<p>
+ 				Extras: <br>
+ 				<input type="checkbox" name="extra[]" value="giftwrap">Gift Wrap<br>
+ 				<input type="checkbox" name="extra[]" value="catalog" checked>Include catalog with order
+ 			</p>
+
+ 			<p>
+				<fieldset>
+					<legend>Your Deatils</legend><br>
+						Ship to:<br>
+						Name:<input type="text" name="name" value=""><br>
+						Address:<input type="text" name="address" value=""><br>
+						City:<input type="text" name="city" value=""><br>
+						State:<input type="text" name="zip" value=""><br>
+						Phone<input type="tel" name="phone" value=""><br>
+				</fieldset>
+ 			</p>
+
+			<p>
+				<fieldset>
+					<legend>Your Review</legend><br>
+					How did you hear about us?
+						<select name="hear">
+							<option value="Google">Google</option>
+							<option value="Yahoo">Yahoo</option>
+							<option value="Acadglid">Webstite</option>
+							<option value="Friend">Friends</option>
+						</select>
+						<br>
+						<br>
+					Would you visit again?:<br>
+						<input type="radio" name="Enquiry" value="Yes">Yes
+						<input type="radio" name="Enquiry" value="No">No
+						<input type="radio" name="Enquiry" value="Maybe">Maybe<br><br>
+				
+			
+					Comments:<br>
+					<textarea name="comments" rows="7" cols="60"></textarea><br><br>
+					
+ 	 				<input type="checkbox" name="updates" value="signup" checked>Sign me up for email updates<br>
+					<input type="submit" value="Submit review">
+				</fieldset>
+ 			</p>
+ 		</form>
+		
+
+ 	</body>
+
+ 	
+ 	
+
+ 					
